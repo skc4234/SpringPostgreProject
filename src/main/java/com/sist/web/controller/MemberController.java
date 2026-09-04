@@ -8,6 +8,37 @@ import lombok.RequiredArgsConstructor;
 import java.util.*;
 import com.sist.web.mapper.*;
 import com.sist.web.vo.MemberVO;
+
+/*
+	 git pull origin main
+	 git checkout -b develop
+	 git add .
+	 git commit -m ""
+	 git push
+	 -----------------------
+	 git pull origin develop
+	 git checkout -b feature/기능명
+	 git add .
+	 git commit -m ""
+	 git push
+	 
+	 main : 배포용
+	  |
+	 develop : 개발 통함
+	  |
+	 -------
+	 |  |  |
+	 기능 분기점
+	 
+	 개발 후 commit, pull requeset => develop
+	------------------------------------------
+	pull request 명령어
+	1. gh pr create --base develop --head feature/login
+	   --title "" --body ""
+	   
+	2. gh pr merge
+ */
+
 @Controller
 @RequiredArgsConstructor
 public class MemberController {
